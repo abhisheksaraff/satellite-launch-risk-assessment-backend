@@ -35,6 +35,7 @@ public class LaunchController {
                         Double.parseDouble(payload.get("orbit_altitude_km")),
                         Double.parseDouble(payload.get("satellite_size_m2")),
                         Double.parseDouble(payload.get("maneuver_compatibility_percent")),
+                        Double.parseDouble(payload.get("drag_coefficient")),
                         Integer.parseInt(payload.get("number_of_simulations"))
                 ), HttpStatus.CREATED);
     }
@@ -48,6 +49,7 @@ public class LaunchController {
                     Double.parseDouble(payload.get("orbit_altitude_km")),
                     Double.parseDouble(payload.get("satellite_size_m2")),
                     Double.parseDouble(payload.get("maneuver_compatibility_percent")),
+                    Double.parseDouble(payload.get("drag_coefficient")),
                     Integer.parseInt(payload.get("number_of_simulations"))
             ), HttpStatus.OK);
         } catch (Exception e) {

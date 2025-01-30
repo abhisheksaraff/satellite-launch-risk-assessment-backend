@@ -25,9 +25,16 @@ public class LaunchService {
             String satellite_name,
             double orbit_altitude_km,
             double satellite_size_m2,
+            double drag_coefficient,
             double maneuver_compatibility_percent,
             int number_of_simulations) {
-        Launch newLaunch = new Launch(satellite_name, orbit_altitude_km, satellite_size_m2, maneuver_compatibility_percent, number_of_simulations);
+        Launch newLaunch = new Launch(
+                satellite_name,
+                orbit_altitude_km,
+                satellite_size_m2,
+                maneuver_compatibility_percent,
+                drag_coefficient,
+                number_of_simulations);
         launchRespository.insert(newLaunch);
 
         return newLaunch;
@@ -39,10 +46,17 @@ public class LaunchService {
             double orbit_altitude_km,
             double satellite_size_m2,
             double maneuver_compatibility_percent,
+            double drag_coefficient,
             int number_of_simulations) {
 
         if (launchRespository.existsById(new ObjectId(id))) {
-            Launch updatedLaunch = new Launch(satellite_name, orbit_altitude_km, satellite_size_m2, maneuver_compatibility_percent, number_of_simulations);
+            Launch updatedLaunch = new Launch(
+                    satellite_name,
+                    orbit_altitude_km,
+                    satellite_size_m2,
+                    maneuver_compatibility_percent,
+                    drag_coefficient,
+                    number_of_simulations);
             updatedLaunch.setId(new ObjectId(id));
             return launchRespository.save(updatedLaunch);
         } else
