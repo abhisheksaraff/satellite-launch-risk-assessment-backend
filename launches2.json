@@ -1,0 +1,20 @@
+[
+  {
+    "satellite_name": "Test Satellite",
+    "launch_date": "2024-01-01",
+    "orbit_altitude_km": 500,
+    "satellite_size_m2": 20,
+    "maneuver_compatibility_percent": 95.0,
+    "debris_density_km3": 0.001,
+    "debris_count": 1000,
+    "solar_radiation_w_m2": 1361,
+    "drag_coefficient": 2.2,
+    "atmospheric_density_kg_m3": 0.0002,
+    "orbital_velocity_km_s": 7.8,
+    "number_of_simulations": 10000,
+    "collisions_detected": 5,
+    "collision_risk_percent_before_maneuver": 0.1,
+    "collision_risk_percent_after_maneuver": 0.05,
+    "drag_force_n_m2": 0.02
+  }
+]

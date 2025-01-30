@@ -1,0 +1,28 @@
+[
+  {
+    "user_inputs": {
+      "satellite_name": "Mission-X1",
+      "launch_date": "2025-04-15T00:00:00Z",
+      "orbit_altitude_km": 600,
+      "satellite_size_m2": 5,
+      "maneuver_capability_percent": 80
+    },
+    "nasa_api_data": {
+      "debris_density_km3": 0.15,
+      "debris_count": 65748,
+      "solar_radiation_w_m2": 1361,
+      "drag_coefficient": 0.0025,
+      "atmospheric_density_kg_m3": 5.0e-15,
+      "orbital_velocity_km_s": 7.3
+    },
+    "simulation_details": {
+      "number_of_simulations": 10000,
+      "collisions_detected": 9990
+    },
+    "calculations": {
+      "collision_risk_percent_before_maneuver": 99.9,
+      "collision_risk_percent_after_maneuver": 19.98,
+      "drag_force_n_m2": 2.3e-6
+    }
+  }
+]

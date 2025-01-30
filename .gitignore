@@ -1,2 +1,2 @@
-# Ignore application properties
-application.properties
+# Ignore environment files
+.env
